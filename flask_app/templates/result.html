@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>result</title>
+</head>
+<body>
+    <div>
+        <h1>Submitted Info</h1>
+        <!-- can access through jinja because the students dictionary was passed through while rendering template in the controllers page -->
+        <!-- student = the context parameter -->
+        <p>Name:            {{student.name}}</p>
+        <p>Dojo Location:    {{student.location}}</p>
+        <p>Favorite Language: {{student.language}}</p>
+        <p>Comments: {{student.comment}}</p>
+    </div>
+    
+</body>
+</html>
